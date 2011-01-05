@@ -4,7 +4,7 @@
   <groupId>uk.co.brotherlogic.mdb</groupId>
   <artifactId>mdbbuy</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>0.1.1-SNAPSHOT</version>
   <name>mdbbuy</name>
   <url>http://maven.apache.org</url>
 
@@ -19,9 +19,14 @@
 
     <dependency>
       <groupId>uk.co.brotherlogic.mdb</groupId>
+<<<<<<< HEAD
       <version>0.5.25</version>
+=======
+      <version>0.5.27</version>
+>>>>>>> 4971dbc2211fc04ca61792284b72e38d21845fb4
       <artifactId>mdbcore</artifactId>
     </dependency>
 
   </dependencies>
+
 </project>
