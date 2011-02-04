@@ -1,0 +1,1 @@
+mvn -q clean compile exec:java -Dexec.args=$1
