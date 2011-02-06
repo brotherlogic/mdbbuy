@@ -45,7 +45,7 @@ public class WantList implements Comparable<WantList>
       double count = 0.0;
       for (Want want : wants)
       {
-         if (want.getRecordID() >= 0)
+         if (want.getRecordID() > 0)
          {
             try
             {

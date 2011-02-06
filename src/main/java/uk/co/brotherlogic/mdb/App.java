@@ -1,6 +1,7 @@
 package uk.co.brotherlogic.mdb;
 
 import java.io.File;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
@@ -49,6 +50,13 @@ public class App
    {
       loadLists();
       Collections.sort(lists);
+
+      Collection<WantList> removeList = new LinkedList<WantList>();
+      for (WantList list : lists)
+         if (list.getScore() == -1)
+            removeList.add(list);
+      lists.removeAll(removeList);
+
       List<Want> wants = new LinkedList<Want>();
       for (int i = 0; i < n - 1; i++)
          wants.add(lists.get(i).pickWant());
